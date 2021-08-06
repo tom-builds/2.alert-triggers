@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box
+}
+
+body {
+  margin: 0;
+  font-family: "Averta", "Avenir W02", "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.App {
+  padding: 20px;
+  min-height: 200vh;
+}
+
+.dark {
+  background-color: hsl(220, 13%, 18%);
+  color: white
+}
+
+.light {
+  background-color: whitesmoke;
+  color: white
+}
+
+.mode {
+  transition-duration: 0.3s;
+  transition-delay: 0.2s;
+}
+
+.heading {
+  font-size: 30px;
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin: auto;
+  max-width: 300px;
+}
+
+.icon {
+  margin-left: 1%;
+  cursor: pointer;
+}
+
+.clock {
+  margin-left: 5%;
+}
+
+.heading {
+  margin-top: 10px;
+  background-color: teal;
+}
+
+@media (max-width:1000px) {
+  .heading {
+    margin: auto auto auto 20px;
+  }
+}
+
+@media (max-width:800px) {
+  .heading {
+    margin: auto auto 20px auto;
+  }
+}

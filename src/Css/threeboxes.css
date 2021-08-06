@@ -1,0 +1,156 @@
+.boxes-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border-radius: 20px;
+    background-color: teal;
+    margin: 20px;
+    height: 400px;
+    width: 300px;
+    min-width: 300px;
+    transition: all 0.2s 0.1s;
+}
+
+.box:hover {
+    box-shadow: 0 8px 12px 0 rgb(1, 1, 1)
+}
+
+h2 {
+    letter-spacing: 1px;
+    text-align: center
+}
+
+.orderbook {
+    align-items: center;
+    padding: 20px 40px 40px 40px
+}
+
+th, tr {
+    padding: 4px
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+    font-weight: lighter;
+    padding-right: 100px;
+    width: 100%
+}
+
+.alert {
+    border-radius: 20px;
+    border: 5px solid teal;
+    overflow: hidden
+}
+
+.header {
+    padding: 10px;
+    text-align: center;
+    overflow: hidden
+}
+
+input {
+    margin: 0px;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    outline: none;
+    background: rgba(0, 128, 128, 0.322);
+    color: white;
+    border: none;
+    border-style: inset;
+    transition: 0.5s;
+}
+
+input:hover {
+    background-color: rgb(21, 173, 173);
+}
+
+::placeholder {
+    color: white
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    overflow-y: scroll;
+    height: 250px;
+}
+
+li {
+    position: relative;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 6px 8px 12px 30px;
+    margin: 10px;
+    list-style-type: none;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+li:hover {
+    font-size: 20px
+}
+
+li:nth-child(odd) {
+    background-color: rgb(21, 173, 173)
+}
+
+.fa-remove {
+    position: absolute;
+    right: 20px;
+    top: 3px;
+    padding: 10px
+}
+
+.fa-dollar {
+    margin-right: 10px
+}
+
+button {
+    padding: 10px;
+    width: 20%;
+    background: teal;
+    border: 2px solid white;
+    color: white;
+    float: right;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+    border-style: outset;
+}
+
+button:hover {
+    background-color: rgb(21, 173, 173);
+    color: white
+}
+
+@media (max-width: 1000px) {
+
+    .boxes-wrapper {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+}
+
+@media (max-width:800px) {
+
+    .boxes-wrapper {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .box {
+        margin: 20px auto 20px auto
+    }
+}
